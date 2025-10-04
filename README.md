@@ -4,6 +4,8 @@ Este projeto é uma implementação interativa de uma lista de exercícios de Ja
 
 Os exercícios foram propostos pelo Professor Luís Fernando Teixeira Bicalho e implementados por Rita Jeveaux.
 
+**Nota:** O projeto está disponivel no endereço: [ https://ritajeveaux.github.io/javascript-exercicios/ ](https://ritajeveaux.github.io/javascript-exercicios/)
+
 ## ✨ Funcionalidades
 
 A página web apresenta os exercícios organizados em seções colapsáveis (accordion), permitindo ao usuário interagir com cada um deles através de formulários.
