@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="© [2025] [Rita Jeveaux]">
+  <title>Javascript | Exercícios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lista de Exercícios - Javascript </h1>
+    <button class="accordion">I. Variáveis</button>
+    <div class="panel">
+      <div class="panel-content">
+        <div class="exercise">
+          <h4>Exercício 1: Multiplicação </h4>
+          <p>Escreva um programa que efetue a multiplicação de dois números inteiros e mostre o resultado. </p>
+          <div class="form-group">
+            <label for="num1-1">Número 1:</label>
+            <input type="number" id="num1-1" placeholder="Digite o primeiro número">
+          </div>
+          <div class="form-group">
+            <label for="num2-1">Número 2:</label>
+            <input type="number" id="num2-1" placeholder="Digite o segundo número">
+          </div>
+          <button class="btn" onclick="multiplicar()">Calcular</button>
+          <div class="result" id="resultado-1"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 2: Média Aritmética </h4>
+          <p>Escreva um programa que receba 4 notas, calcule e mostre a média aritmética entre elas. </p>
+          <div class="form-group">
+            <label for="nota1-2">Nota 1:</label>
+            <input type="number" id="nota1-2" placeholder="Digite o primeira nota">
+          </div>
+          <div class="form-group">
+            <label for="nota2-2">Nota 2:</label>
+            <input type="number" id="nota2-2" placeholder="Digite o segunda nota">
+          </div>
+          <div class="form-group">
+            <label for="nota3-2">Nota 3:</label>
+            <input type="number" id="nota3-2" placeholder="Digite o terceira nota">
+          </div>
+          <div class="form-group">
+            <label for="nota4-2">Nota 4:</label>
+            <input type="number" id="nota4-2" placeholder="Digite o quarta nota">
+          </div>
+          <button class="btn" onclick="mediaAritmetica()">Calcular</button>
+          <div class=" result" id="resultado-2">
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 3: Desconto de 25% </h4>
+          <p>Escreva um programa que aplique um desconto de 25% sobre o preço de um produto recebido como entrada e mostre o valor resultante. </p>
+          <div class="form-group">
+            <label for="preco-3">Preço do Produto:</label>
+            <input type="number" id="preco-3" placeholder="Digite o preço do produto">
+          </div>
+          <button class="btn" onclick="desconto()">Calcular</button>
+          <div class="result" id="resultado-3"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 4: Área e Perímetro de uma Sala </h4>
+          <p>Faça um programa que calcule e mostre a área e o perímetro de uma sala retangular cujas medidas são fornecidas pelo usuário. </p>
+          <div class="form-group">
+            <label for="comprimento-4">Comprimento (m):</label>
+            <input type="number" id="comprimento-4" placeholder="Digite o valor para o comprimento.">
+          </div>
+          <div class="form-group">
+            <label for="largura-4">Largura (m):</label>
+            <input type="number" id="largura-4" placeholder="Digite o valor para a largura.">
+          </div>
+          <button class="btn" onclick="areaPerimetro()">Calcular</button>
+          <div class="result" id="resultado-4"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 5: Caixas de Azulejo </h4>
+          <p>Escreva um programa para ler as dimensões de uma cozinha retangular, em seguida calcular e escrever a quantidade de caixas de azulejos necessárias para cobrir o chão da cozinha. Cada caixa de azulejos possui 2,5 m². </p>
+          <div class="form-group">
+            <label for="comprimento-5">Comprimento (m):</label>
+            <input type="number" id="comprimento-5" placeholder="Digite o valor para o comprimento.">
+          </div>
+          <div class="form-group">
+            <label for="largura-5">Largura (m):</label>
+            <input type="number" id="largura-5" placeholder="Digite o valor para a largura.">
+          </div>
+          <button class="btn" onclick="azulejos()">Calcular</button>
+          <div class="result" id="resultado-5"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 6: Área de um Círculo </h4>
+          <p>Elabore um programa que calcule a área de um círculo. area = $\pi$ x r².</p>
+          <div class="form-group">
+            <label for="raio-6">Raio (r):</label>
+            <input type="number" id="raio-6" placeholder="Digite o valor do raio.">>
+          </div>
+          <button class="btn" onclick="areaCirculo()">Calcular</button>
+          <div class="result" id="resultado-6"></div>
+        </div>
+      </div>
+    </div>
+    <button class="accordion">II. Funções</button>
+    <div class="panel">
+      <div class="panel-content">
+        <div class="exercise">
+          <h4>Exercício 1: Média e Produto </h4>
+          <p>Faça um programa que leia 2 números inteiros, calcule e exiba a média aritmética e o produto dos números. O programa deve usar as funções `calcula_media()` e `calcula_produto()`.</p>
+          <div class="form-group">
+            <label for="num1-f1">Número 1:</label>
+            <input type="number" id="num1-f1" placeholder="Digite o primeiro número.">
+          </div>
+          <div class="form-group">
+            <label for="num2-f1">Número 2:</label>
+            <input type="number" id="num2-f1" placeholder="Digite o segundo número.">
+          </div>
+          <button class="btn" onclick="mediaProduto()">Calcular</button>
+          <div class="result" id="resultado-f1"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 2: Média Ponderada </h4>
+          <p>Faça um programa que calcule e imprima a média ponderada de um aluno. O programa deve ler os pesos das duas provas e em seguida a matrícula e as notas do aluno.O programa deve utilizar a função `calcula_media_ponderada()`.</p>
+          <div class="form-group">
+            <label for="peso1-f2">Peso da Prova 1:</label>
+            <input type="number" id="peso1-f2" placeholder="Digite o peso da primeita nota.">
+          </div>
+          <div class="form-group">
+            <label for="peso2-f2">Peso da Prova 2:</label>
+            <input type="number" id="peso2-f2" placeholder="Digite o peso da segunda nota.">
+          </div>
+          <div class="form-group">
+            <label for="matricula-f2">Matrícula:</label>
+            <input type="number" id="matricula-f2" placeholder="Digite a matricula.">
+          </div>
+          <div class="form-group">
+            <label for="nota1-f2">Nota da Prova 1:</label>
+            <input type="number" step="0.01" id="nota1-f2" placeholder="Digite a primeira nota.">
+          </div>
+          <div class="form-group">
+            <label for="nota2-f2">Nota da Prova 2:</label>
+            <input type="number" step="0.01" id="nota2-f2" placeholder="Digite a segunda nota.">
+          </div>
+          <button class="btn" onclick="mediaPonderada()">Calcular</button>
+          <div class="result" id="resultado-f2"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 3: Média Ponderada com a função `calcula_produto()`</h4>
+          <p>Altere o programa do exercício 2 para que ele utilize a função `calcula_produto` do exercício 1 no cálculo da média ponderada.</p>
+          <p>Formulário similar ao Exercício 2 acima, com a lógica de cálculo alterada no Javascript.</p>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 4: Média Ponderada para 2 Alunos</h4>
+          <p>Altere o programa do exercício 3 para que ele processe os dados de 2 alunos ao invés de apenas 1.</p>
+          <p>Formulários para dois alunos.</p>
+        </div>
+      </div>
+    </div>
+    <button class="accordion">III. Condicionais</button>
+    <div class="panel">
+      <div class="panel-content">
+        <div class="exercise">
+          <h4>Exercício 1: Notas e Aprovação</h4>
+          <p>Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média e apresentar o status: "Aprovado" (>= 7), "Reprovado" (< 7) ou "Aprovado com Distinção" (=10).</p>
+              <div class="form-group">
+                <label for="nota1-c1">Nota 1:</label>
+                <input type="number" step="0.01" id="nota1-c1" placeholder="Digite a primeira nota.">
+              </div>
+              <div class="form-group">
+                <label for="nota2-c1">Nota 2:</label>
+                <input type="number" step="0.01" id="nota2-c1" placeholder="Digite a segunda nota.">
+              </div>
+              <button class="btn" onclick="verificarAprovacao()">Verificar</button>
+              <div class="result" id="resultado-c1"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 2: Reajuste Salarial</h4>
+          <p>Faça um programa que recebe o salário de um colaborador e o reajuste segundo um critério baseado no salário atual:
+          <ul>
+            <li>Salários até R$ 280,00: aumento de 20%</li>
+            <li>Salários entre R$ 280,00 e R$ 700,00: aumento de 15%</li>
+            <li>Salários entre R$ 700,00 e R$ 1500,00: aumento de 10%</li>
+            <li>Salários de R$ 1500,00 em diante: aumento de 5%</li>
+          </ul>
+          <p>Após o aumento, o programa deve informar o salário antes, o percentual de aumento, o valor do aumento e o novo salário.</p>
+          <div class="form-group">
+            <label for="salario-c2">Salário Atual:</label>
+            <input type="number" step="0.01" id="salario-c2" placeholder="Digite o valor do salário.">
+          </div>
+          <button class="btn" onclick="reajusteSalarial()">Calcular Reajuste</button>
+          <div class="result" id="resultado-c2" height="auto"></div>
+        </div>
+      </div>
+    </div>
+    <button class="accordion">IV. Estruturas de Repetição</button>
+    <div class="panel">
+      <div class="panel-content">
+        <div class="exercise">
+          <h4>Exercício 1: Validação de Informações</h4>
+          <p>Faça um programa que leia e valide as seguintes informações: Nome (maior que 3 caracteres), Idade (entre 0 e 150), Salário (maior que zero) e Estado Civil ('s', 'c', 'v', 'd').</p>
+          <div class="form-group">
+            <label for="nome-r1">Nome:</label>
+            <input type="text" id="nome-r1" placeholder="Digite o nome.">
+          </div>
+          <div class="form-group">
+            <label for="idade-r1">Idade:</label>
+            <input type="number" id="idade-r1" placeholder="Digite a idade.">
+          </div>
+          <div class="form-group">
+            <label for="salario-r1">Salário:</label>
+            <input type="number" step="0.01" id="salario-r1" placeholder="Digite o valor do salário.">
+          </div>
+          <div class="form-group">
+            <label for="estadoCivil-r1">Estado Civil (s, c, v, d):</label>
+            <input type="text" id="estadoCivil-r1" placeholder="Digite 's', 'c', 'v' ou 'd'.">
+          </div>
+          <button class="btn" onclick="validarInformacoes()">Validar</button>
+          <div class="result" id="resultado-r1"></div>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício 2: Maior Número</h4>
+          <p>Faça um programa que leia 5 números e informe o maior número.</p>
+          <div class="form-group">
+            <label for="numeros-r2">Números (separados por vírgula):</label>
+            <input type="text" id="numeros-r2" placeholder="Exemplo: 10, 25, 5, 8, 30">
+          </div>
+          <button class="btn" onclick="encontrarMaiorNumero()">Encontrar</button>
+          <div class="result" id="resultado-r2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+
+</html>
